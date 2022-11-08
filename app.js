@@ -2,7 +2,9 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
-var port = 8083;
+
+//var port = 8083;
+
 //var db = 'mongodb+srv://cbdev:clavemongodb@cluster0.ny18irn.mongodb.net/?retryWrites=true&w=majority';
 //var db = 'mongodb://cbdev:clavemongodb@cluster0.ny18irn.mongodb.net';
 //mongoose.connect(db);
@@ -35,13 +37,15 @@ app.use(bodyParser.urlencoded({
 
 app.use('/books', books);
 
+const PORT = process.env.PORT || 3000
+
 app.get('/', function(req, res){
     console.log('app starting on port: '+port)
     res.send('tes express nodejs mongodb');
 });
 
-const port = process.env.PORT || 3000;
+
 
 app.listen(port, function(){
-    console.log('app listening on port: '+port);
+    console.log('app listening on port: '+PORT);
 });
