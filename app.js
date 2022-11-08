@@ -46,6 +46,6 @@ app.get('/', function(req, res){
 
 
 
-app.listen(port, function(){
+app.listen(PORT, function(){
     console.log('app listening on port: '+PORT);
 });
