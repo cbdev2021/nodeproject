@@ -4,20 +4,20 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 //var port = 8083;
-//const PORT = process.env.PORT || 10000;
-const PORT = 1029;
+const PORT = process.env.PORT || 10000;
+//const PORT = 1029;
 
 //var db = 'mongodb+srv://cbdev:clavemongodb@cluster0.ny18irn.mongodb.net/?retryWrites=true&w=majority';
 //var db = 'mongodb://cbdev:clavemongodb@cluster0.ny18irn.mongodb.net';
 //mongoose.connect(db);
 
 //nuevo
-app.listen(PORT, (err) => {
-  if (err) {
-  console.log("There was a problem with app.listen:"+ err);
-  }
-  console.log("Listening on port" +PORT);
-  });
+// app.listen(PORT, (err) => {
+//   if (err) {
+//   console.log("There was a problem with app.listen:"+ err);
+//   }
+//   console.log("Listening on port" +PORT);
+//   });
 
 //fin nuevo
 
