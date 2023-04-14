@@ -10,6 +10,17 @@ const PORT = process.env.PORT || 3000;
 //var db = 'mongodb://cbdev:clavemongodb@cluster0.ny18irn.mongodb.net';
 //mongoose.connect(db);
 
+//nuevo
+app.listen(PORT, (err) => {
+  if (err) {
+  console.log("There was a problem with app.listen:"+ err);
+  }
+  console.log("Listening on port" +PORT);
+  });
+
+//fin nuevo
+
+
 // 
 const mongoAtlasUri =
   "mongodb+srv://cbdev:clavemongodb@cluster0.ny18irn.mongodb.net/books?retryWrites=true&w=majority";
@@ -50,3 +61,6 @@ app.get('/', function(req, res){
 app.listen(PORT, function(){
     console.log('app listening on port: '+PORT);
 });
+
+
+ 
