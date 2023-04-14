@@ -4,7 +4,8 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 //var port = 8083;
-const PORT = process.env.PORT || 10000;
+//const PORT = process.env.PORT || 10000;
+const PORT = process.env.PORT;
 
 //var db = 'mongodb+srv://cbdev:clavemongodb@cluster0.ny18irn.mongodb.net/?retryWrites=true&w=majority';
 //var db = 'mongodb://cbdev:clavemongodb@cluster0.ny18irn.mongodb.net';
