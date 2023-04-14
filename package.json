@@ -17,5 +17,8 @@
   },
   "engines": {
     "node": "17.x"
+  },
+  "config": {
+    "PORT_GLITCH": "process.env.PORT"
   }
 }
