@@ -50,10 +50,10 @@ app.use(bodyParser.urlencoded({
 
 app.use('/books', books);
 
-//const PORT = process.env.PORT || 3000
+//const PORT = process.env.PORT || 10000;
 
 app.get('/', function(req, res){
-    console.log('app starting on port: '+port)
+    console.log('app starting on port: '+PORT);
     res.send('tes express nodejs mongodb');
 });
 
